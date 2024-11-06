@@ -4,13 +4,11 @@ body {
   color: white;
   max-width: 1200px; /* Adapte conforme necessário */
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   background-color: #000;
   box-sizing: border-box;
-  overflow: auto; 
+  overflow: auto;
 }
-
-
 
 h1,
 h2 {
@@ -34,14 +32,14 @@ h2 {
 /* Barra de pesquisa inicial */
 .search-bar {
   position: fixed;
-  top: 4rem;
+  top: 1rem;
   left: 50%;
-  width: 75%;
+  width: 88%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 5rem;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background-color: white;
   padding: 15px;
   border-radius: 30px;
@@ -104,6 +102,7 @@ textarea {
 }
 
 button {
+  display: none;
   padding: 10px 20px;
   border: none;
   background-color: #007bff;
@@ -129,10 +128,77 @@ button:hover {
   z-index: -1;
 }
 
-#sobre-format1 {
+.content {
+  margin-top: -3.5rem;
   display: flex;
   justify-content: center; /* Centraliza o contêiner na página */
   align-items: center; /* Centraliza o conteúdo verticalmente */
   text-align: left; /* Alinha o texto à esquerda dentro do contêiner */
   flex-direction: column; /* Organiza o conteúdo verticalmente */
+  padding: 50px;
+  border: 5px solid;
+  border-radius: 20px;
+}
+
+.section-h2 {
+  display: flex;
+  border: 1px solid;
+  border-radius: 10px;
+  width: auto;
+  height: 10px;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin-bottom: 0;
+}
+
+#section-formacao {
+  display: flex;
+  border: 1px solid;
+  border-radius: 10px;
+  width: auto;
+  height: 10px;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 789px) {
+  .search-bar {
+    width: 90%;
+    height: auto; /* Ajusta a altura automaticamente */
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    padding: 10px; /* Reduz o padding para diminuir a altura */
+  }
+  .search-bar .profile-pic {
+    width: 50px;
+  }
+  .search-bar .icons {
+    display: none; /* Esconde os ícones inicialmente */
+    flex-direction: column; /* Garante que os ícones fiquem em coluna */
+    margin-top: 15px;
+    width: 100%; /* Garante que os ícones usem a largura total */
+  }
+  .search-bar .menu-button {
+    display: block; /* Mostra o botão de menu */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    margin-top: 0; /* Remove a margem superior */
+  }
+  .search-bar .icons.show {
+    display: flex; /* Mostra os ícones ao clicar no botão de menu */
+    flex-direction: column; /* Garante que os ícones fiquem em coluna ao mostrar */
+    margin-top: 10px; /* Adiciona um pequeno espaçamento entre o menu e os ícones */
+  }
 }

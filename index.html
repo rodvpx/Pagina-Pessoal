@@ -13,7 +13,8 @@
         <img src="/img/minha-foto.png" alt="Minha Foto" class="profile-pic" />
       </figure>
       <h1 id="h1-sobre">Rodrigo Simão</h1>
-      <div class="icons">
+      <button class="menu-button" id="menu-button">☰</button>
+      <div class="icons" id="icons">
         <a href="#sobre">ℹ️ Sobre</a>
         <a href="#formacao-academica">🎓 Formação</a>
         <a href="#contato">📞 Contato</a>
@@ -22,9 +23,8 @@
 
     <!-- Seção Sobre -->
     <section id="sobre">
-      <h2>Sobre Mim</h2>
+      <h2 class="section-h2">Sobre Mim</h2>
       <div class="content">
-        <div id="sobre-format1">
         <h3>👋 Olá, eu sou Rodrigo Simão!</h3>
         <p>
           🎓 <strong>Estudante de Sistemas de Informação</strong> (4º
@@ -32,15 +32,13 @@
           🏫 <strong>IF Goiano - Campus Urutaí</strong><br />
           📍 <strong>Ipameri - GO</strong>
         </p>
-        </div>
         <p>
           Sou um estudante focado no desenvolvimento backend, sempre em busca de
-          aprender novas tecnologias. Atualmente, estou me aprofundando nas
+          aprender novas tecnologias.<br />Atualmente, estou me aprofundando nas
           linguagens <strong>Java</strong> e <strong>Kotlin</strong>, com o
           objetivo de construir uma carreira sólida na área de desenvolvimento
           de software.
         </p>
-
         <h3>🚀 O que estou estudando atualmente:</h3>
         <ul>
           <li>
@@ -53,9 +51,7 @@
             <strong>HTML, CSS e JavaScript</strong>
           </li>
         </ul>
-
         <h3>🛠 Tecnologias e Ferramentas</h3>
-
         <h4>Linguagens e Frameworks:</h4>
         <p align="left">
           <img
@@ -95,7 +91,6 @@
             height="40"
           />
         </p>
-
         <h4>Ferramentas e IDEs:</h4>
         <p align="left">
           <img
@@ -140,34 +135,39 @@
 
     <!-- Seção Formação Acadêmica -->
     <section id="formacao-academica">
-      <h2>Formação Acadêmica</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad
-        consequuntur perspiciatis quasi quibusdam quis sint veritatis
-        voluptates? Aperiam atque, cupiditate dolorum hic incidunt iste nemo
-        unde. Maxime, velit voluptatum?
-      </p>
+      <div class="content">
+        <h2 class="section-h2">Formação Acadêmica</h2>
+        <p>
+          <strong>Ensino médio completo:</strong><br />
+          Colegio Estadual Professor Augusto Ceva (NORMAL)<br /><br />
+          <strong>Superior:</strong><br />
+          Instituto Federal Goiano - Campus Urutaí<br />
+          <span>2023-2026</span>
+        </p>
+      </div>
     </section>
 
     <!-- Seção Contato -->
     <section id="contato">
-      <h2>Contato</h2>
-      <form
-        action="mailto:seuemail@example.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required />
+      <h2 class="section-h2">Contato</h2>
+      <div class="content">
+        <form
+          action="mailto:seuemail@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="nome"><br />Nome:</label>
+          <input type="text" id="nome" name="nome" required />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" required></textarea>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
 
-        <button type="submit">Enviar</button>
-      </form>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
     </section>
 
     <!-- Fundo estrelado -->
