@@ -34,7 +34,7 @@ h2 {
   position: fixed;
   top: 1rem;
   left: 50%;
-  width: 88%;
+  width: 72%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +79,7 @@ h2 {
 
 /* Estilos das seções */
 section {
-  padding: 100px 20px;
+  padding: 10px 20px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -145,7 +145,7 @@ button:hover {
   border: 1px solid;
   border-radius: 10px;
   width: auto;
-  height: 10px;
+  height: 11px;
   margin: 3rem auto;
   align-items: center;
   justify-content: center;
@@ -154,13 +154,13 @@ button:hover {
   margin-bottom: 0;
 }
 
-#section-formacao {
+#sobreh2 {
+  margin-top: 13rem;
   display: flex;
   border: 1px solid;
   border-radius: 10px;
   width: auto;
-  height: 10px;
-  margin: 3rem auto;
+  height: 11px;
   align-items: center;
   justify-content: center;
   background-color: white;
